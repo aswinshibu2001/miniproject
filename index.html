@@ -8,7 +8,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <title>Tech Layoffs</title>
+    
+     <title>Tech Layoffs</title>
   </head>
   <body>
    
@@ -34,6 +35,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="#blog">Blog Spot</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#target-div">Responses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact us</a>
+              </li>
              
                
           </div>
@@ -47,7 +54,7 @@
 <h1 >The Impact of Tech Layoffs on Society </h1>
 
 
-<p style="margin-top: 10px;">  
+<p style="margin-top: 10px;margin-left: 10px;">  
    <b> Introduction:</b><br> 
 Tech layoffs, the termination of employees in the technology sector, 
 have profound implications for individuals and society. <br>This article explores 
@@ -81,46 +88,83 @@ Tech layoffs disrupt lives, hinder innovation, and strain communities.
 
 
 <div class="container-fluid" id="blog">
-  <form action="" class="contactForm">
-        <div class="form-group">
+  <form type="" class="row">
+        <div class="col-md-6">
           <label for="exampleInputName2">Name</label>
-          <input type="text" class="form-control" id="n" placeholder="Jane Doe">
+          <input type="text" class="form-control" id="n" placeholder="Jane Doe" required>
         </div>
-        <div class="form-group">
+        <div class="col-md-6">
           <label for="exampleInputEmail2">Email</label>
-          <input type="email" class="form-control" id="e" placeholder="jane.doe@example.com">
+          <input type="email" class="form-control" id="e" placeholder="jane.doe@example.com"  required>
+        </div>
+        <div class="col-md-6">
+          <label for="exampleInputEmail2">Company</label>
+          <input type="text" class="form-control" id="c" placeholder="abcd"  required>
+        </div>
+        <div class="col-md-6">
+          <label for="exampleInputEmail2">Sector</label>
+          <input type="text" class="form-control" id="s" placeholder="private"  required>
+        </div>
+        <div class="col-md-6">
+          <label for="exampleInputEmail2">Date of joining</label>
+          <input type="date" class="form-control" id="join" >
+        </div>
+        <div class="col-md-6">
+          <label for="exampleInputEmail2">Date of resigning</label>
+          <input type="date" class="form-control" id="resign" >
         </div>
         <div class="form-group">
           <label for="exampleInputEmail2">Experience</label>
-          <input type="text" class="form-control" id="ex" placeholder="write your experience here...">
+          <input type="text" class="form-control" id="ex" placeholder="write your experience here..." width="me-auto"  required>
         </div>
         <div class="inputBox" style="padding-top: 20px;">
           <button type="submit" class="btn btn-primary">Submit</button>
+
+          
+
+
       </div>
   </form>
 </div>
-     
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-<script  type="module" src="db.js"></script>
+ 
+
+
+
+
+
+<h2 style="padding-top: 30px;padding-bottom: 20px;">See previous responses</h2>
+
+<div id="target-div"  >
+ <p id="rname" > name here</p>
+ <p id="remail"></p>
+ <p id="rexperience"></p>
+
+
+  
+</div>
+<form action="" class="response">
+  <button type="submit" id="submit-button" class="btn btn-primary" style="margin-top: 10px;margin-left: 10px;">Next</button>
+</form>
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top" >Top</button>
 
-
-<div id="footer" style="text-align: center;
-padding: 50px; ">
-<footer >
-  <a href="#" style="padding-right: 20px ;color: #000;font-weight: 100;">Aswin</a>
-  <a href="#"style="padding-right: 20px ; color: #000;font-weight: 100;">Chethana</a>
-  <a href="#"style="padding-right:20px ;color: #000;font-weight: 100;">Feba</a>
-  <a href="#" style="color: #000;font-weight: 100;">Jis</a>
-</footer>
-</div>
-
 </body>
 
 
+
+<div id="footer" style="text-align: center;padding: 50px; ">
+<footer >
+  <a href="#" style="padding-right: 20px ;font-weight: 200;"   >Aswin</a>
+  <a href="#"style="padding-right: 20px ; font-weight: 200;">Chethana</a>
+  <a href="#"style="padding-right:20px ;font-weight: 200;">Feba</a>
+  <a href="#" style="font-weight: 100;">Jis</a><br><br>
+  <a href="#" style="font-weight: 100;">Amal Jyothi College of Engineering</a>
+</footer>
+</div>
+
+<script  type="module" src="db.js"></script>
 <script src="app.js"></script>
 
 </html>
